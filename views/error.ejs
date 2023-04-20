@@ -1,0 +1,19 @@
+<% layout('layouts/boilerplate') %> 
+
+<div class="'row">
+    <div class="'col-6 offset-3">
+        <div class = 'alert alert-danger' role="alert">
+            <h4 class="alert-heading">  <%= err.message %> </h4>
+            <%  if(process.env.NODE_ENV !=="production"){ %>
+                <p><%= error.message %></p>
+                <% } %>
+                
+            <p>This is an error message, 404 status code means the page you have tried to access is not available or does not exist, please try another page within this website.
+            </p>
+
+            <p class="mb-0">
+                Please contact the website admin for more information.
+            </p>
+        </div>
+    </div>
+</div>

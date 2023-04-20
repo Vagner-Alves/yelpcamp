@@ -1,0 +1,43 @@
+<% layout('layouts/boilerplate') %>
+<div class="container d-flex justify-content-center align-items-center mt-2 mb-5">
+    <div class="row flex-fill">
+        <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+            <div class="card shadow">
+                <img src="https://cdn.dribbble.com/userupload/4243174/file/original-e2e275e90274551c381c2f25725a8375.jpg?resize=400x0 "class="card-img-top img-fluid " alt="" crossorigin="">
+                <div class="card-body">
+
+                    <h5 class="card-title">Register</h5>
+                   
+                    <form action="/register" method="POST" class="validate-form" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label" for="username">username</label>
+                            <input class="form-control" type="text" id="username" name="username" autofocus required>
+                            <div class="valid-feedback">
+                                looks good
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="email">email</label>
+                            <input class="form-control" type="email" id="email" name="email" required>
+                            <div class="valid-feedback">
+                                looks good
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Password</label>
+                            <input class="form-control" type="text" id="password" name="password" required>
+                            <div class="valid-feedback">
+                                looks good
+                            </div>
+                        </div>
+                        <button class="btn btn-success col-12">Register</button>
+                    </form>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
